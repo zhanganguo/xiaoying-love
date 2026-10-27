@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101329">
+  <meta name="description" content="楹你而心动。小安送给小楹的一封星河情书，写满那些细微而坚定的爱意。">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>楹你而心动 · 小安写给小楹的情书</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="ambientCanvas" aria-hidden="true"></canvas>
+  <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+  <div id="scrollProgress" class="scroll-progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a href="#home" class="brand" aria-label="回到首页"><span class="brand-symbol">✦</span> XIAO AN <span class="brand-love">♡</span> XIAO YING</a>
+    <nav class="main-nav" id="mainNav" aria-label="页面章节">
+      <a href="#moon">遇见</a><a href="#rose">心动</a><a href="#letter">情书</a><a href="#gallery">回忆</a><a href="#finale">告白</a>
+    </nav>
+    <div class="header-tools">
+      <button id="musicToggle" class="tool-button" aria-label="开启背景音乐" aria-pressed="false" title="开启或关闭轻柔音乐"><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="music-label">音乐</span></button>
+      <button id="navToggle" class="tool-button mobile-menu-button" aria-label="展开导航" aria-expanded="false"><span class="menu-bars" aria-hidden="true"><i></i><i></i></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero chapter-section" id="home" data-scene="night">
+      <div class="hero-halo hero-halo-one" aria-hidden="true"></div>
+      <div class="hero-halo hero-halo-two" aria-hidden="true"></div>
+      <div class="star-ring" aria-hidden="true"></div>
+      <div class="hero-grid container">
+        <div class="hero-copy reveal visible">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A LOVE LETTER WRITTEN IN THE STARS</div>
+          <p class="hero-preface">致我最偏爱的小楹</p>
+          <h1>楹你而<span class="title-gradient">心动</span><span class="title-spark">✧</span></h1>
+          <p class="hero-subtitle">世界有万千星辰，<br>而我只想认真地，奔向你。</p>
+          <p class="hero-note">这是小安偷偷藏在星河里的心意。<br>愿你打开它的时候，恰好有一点点开心。</p>
+          <div class="hero-actions">
+            <a class="button-primary" href="#moon"><span>开启我们的浪漫</span><span aria-hidden="true">↗</span></a>
+            <a class="button-quiet" href="#letter">直接读情书 <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-visual reveal visible">
+          <div class="portrait-constellation portrait-constellation-a">✦</div>
+          <div class="portrait-constellation portrait-constellation-b">✧</div>
+          <figure class="hero-photo">
+            <picture>
+              <source media="(max-width: 650px)" srcset="assets/photos/01-together-portrait.jpg">
+              <img src="assets/photos/02-together-landscape.jpg" alt="小安和小楹在演出现场的珍贵合照" loading="eager" fetchpriority="high">
+            </picture>
+            <figcaption><span>THE TWO OF US</span><strong>小安 ♡ 小楹</strong></figcaption>
+          </figure>
+          <div class="floating-polaroid" aria-hidden="true"><span>Lucky to have you</span><span>♥</span></div>
+          <div class="hero-vertical-label">LOVE STORY · NO. 001</div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#moon"><span>SCROLL TO EXPLORE</span><span class="scroll-cue-line"></span></a>
+      <div class="section-number hero-index">01 <span>/</span> 09</div>
+    </section>
+
+    <section class="chapter-section moon-section" id="moon" data-scene="moon">
+      <div class="moon-orb" aria-hidden="true"><div class="moon-crater crater-one"></div><div class="moon-crater crater-two"></div><div class="moon-crater crater-three"></div></div>
+      <div class="moon-cloud cloud-one" aria-hidden="true"></div><div class="moon-cloud cloud-two" aria-hidden="true"></div>
+      <div class="container centered-content reveal">
+        <p class="section-kicker">CHAPTER ONE · THE BEGINNING</p>
+        <h2 class="display-title">从遇见你开始，<br><em>所有平凡都有了光。</em></h2>
+        <div class="small-ornament" aria-hidden="true">✦　♡　✦</div>
+        <p class="moon-paragraph">有些人出现之前，日子只是日子。<br>有些人出现之后，每一天都值得珍惜。</p>
+        <p class="moon-paragraph muted">我不敢说自己已经懂得所有关于爱的道理，<br>但我知道，想到你时，连心都变得很柔软。</p>
+        <span class="handwritten-signature">To 小楹，from 小安</span>
+      </div>
+      <div class="section-number">02 <span>/</span> 09</div>
+    </section>
+
+    <section class="chapter-section reasons-section" id="things" data-scene="rose">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">CHAPTER TWO · LITTLE THINGS</p>
+          <h2 class="display-title">喜欢你，是由很多<br><em>小小的心动</em>组成的。</h2>
+          <p class="section-description">点开每一张卡片，看看小安偷偷写下的话。</p>
+        </div>
+        <div class="reasons-grid">
+          <button class="reason-card reveal" aria-label="翻开第一张心动卡片" aria-pressed="false"><span class="reason-inner"><span class="reason-front"><small>01 / SMILE</small><span class="reason-icon">☼</span><strong>你的笑容</strong><em>点击翻开</em></span><span class="reason-back"><span>♡</span>你笑起来的时候，我总觉得，今天又多了一个很好的理由。</span></span></button>
+          <button class="reason-card reveal" aria-label="翻开第二张心动卡片" aria-pressed="false"><span class="reason-inner"><span class="reason-front"><small>02 / VOICE</small><span class="reason-icon">♫</span><strong>你的声音</strong><em>点击翻开</em></span><span class="reason-back"><span>♡</span>有时只是听你说说今天发生的小事，我就已经很满足。</span></span></button>
+          <button class="reason-card reveal" aria-label="翻开第三张心动卡片" aria-pressed="false"><span class="reason-inner"><span class="reason-front"><small>03 / MOMENT</small><span class="reason-icon">✧</span><strong>与你同框</strong><em>点击翻开</em></span><span class="reason-back"><span>♡</span>人群很热闹，而我最想珍藏的，是身边有你的瞬间。</span></span></button>
+          <button class="reason-card reveal" aria-label="翻开第四张心动卡片" aria-pressed="false"><span class="reason-inner"><span class="reason-front"><small>04 / MISSING</small><span class="reason-icon">☾</span><strong>偶尔想你</strong><em>点击翻开</em></span><span class="reason-back"><span>♡</span>想念不总是轰轰烈烈，有时是看到一件小事，就想立刻告诉你。</span></span></button>
+          <button class="reason-card reveal" aria-label="翻开第五张心动卡片" aria-pressed="false"><span class="reason-inner"><span class="reason-front"><small>05 / GENTLE</small><span class="reason-icon">❀</span><strong>真实的你</strong><em>点击翻开</em></span><span class="reason-back"><span>♡</span>我喜欢漂亮照片中的你，也喜欢生活里每一个自然的你。</span></span></button>
+          <button class="reason-card reveal" aria-label="翻开第六张心动卡片" aria-pressed="false"><span class="reason-inner"><span class="reason-front"><small>06 / TOMORROW</small><span class="reason-icon">∞</span><strong>我们的以后</strong><em>点击翻开</em></span><span class="reason-back"><span>♡</span>比起所有宏大的誓言，我更想认真陪你过好一个又一个明天。</span></span></button>
+        </div>
+      </div>
+      <div class="section-number">03 <span>/</span> 09</div>
+    </section>
+
+    <section class="chapter-section rose-section" id="rose" data-scene="rose">
+      <div class="container rose-layout">
+        <div class="rose-art reveal" aria-hidden="true">
+          <div class="rose-aura"></div>
+          <svg class="rose-svg" viewBox="0 0 500 580" role="img" aria-label="盛开的玫瑰">
+            <defs><radialGradient id="petalGrad"><stop offset="0" stop-color="#ffe0e3"/><stop offset=".5" stop-color="#e68eae"/><stop offset="1" stop-color="#9f446e"/></radialGradient><linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9ba88f"/><stop offset="1" stop-color="#2f685d"/></linearGradient><linearGradient id="stemGrad"><stop stop-color="#648a70"/><stop offset="1" stop-color="#234c4d"/></linearGradient></defs>
+            <path d="M258 302 Q282 421 250 554" fill="none" stroke="url(#stemGrad)" stroke-width="10" stroke-linecap="round"/>
+            <path d="M265 434 Q190 375 111 412 Q176 482 256 466" fill="url(#leafGrad)" opacity=".9"/><path d="M263 475 Q347 399 407 424 Q344 511 255 500" fill="url(#leafGrad)" opacity=".9"/>
+            <g class="rose-bloom">
+              <path d="M249 304 C110 292 88 198 146 139 C207 81 255 161 255 161 C302 91 392 117 399 213 C405 301 320 339 249 304Z" fill="url(#petalGrad)"/>
+              <path d="M249 303 C177 287 113 230 151 173 C185 129 235 195 254 224 C268 146 355 127 379 181 C415 252 337 293 249 303Z" fill="#eaa0b6" opacity=".9"/>
+              <path d="M252 300 C190 296 165 222 209 190 C243 168 273 200 278 229 C302 195 350 201 355 239 C363 282 300 317 252 300Z" fill="#f9c6cc"/>
+              <path d="M252 290 C218 268 223 228 251 225 C286 221 300 261 280 280 C262 299 242 280 252 258" fill="none" stroke="#a64b75" stroke-width="19" stroke-linecap="round"/>
+              <path d="M175 298 Q241 353 320 313" fill="none" stroke="#f5c8cb" stroke-width="12" opacity=".65"/>
+            </g>
+          </svg>
+          <span class="rose-orbit rose-orbit-one">✧</span><span class="rose-orbit rose-orbit-two">✦</span><span class="rose-orbit rose-orbit-three">·</span>
+        </div>
+        <div class="rose-copy reveal">
+          <p class="section-kicker">CHAPTER THREE · A ROSE FOR YOU</p>
+          <h2 class="display-title">如果心动有颜色，<br><em>一定是玫瑰色。</em></h2>
+          <p>小楹，我想送你一朵不会凋谢的玫瑰。它不需要盛大的仪式，只想安静地告诉你，有一个人总在认真地喜欢你。</p>
+          <p>愿你可以放心地做自己。开心时尽情笑，疲惫时好好休息。你不需要每时每刻都闪闪发光，也一直值得被珍惜。</p>
+          <button id="roseWish" class="text-action">轻轻碰一下这朵玫瑰 <span>✧</span></button>
+          <div id="roseResponse" class="rose-response" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+      <div class="section-number">04 <span>/</span> 09</div>
+    </section>
+
+    <section class="chapter-section letter-section" id="letter" data-scene="letter">
+      <div class="letter-lights" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-heading reveal letter-heading">
+          <p class="section-kicker">CHAPTER FOUR · A LETTER ACROSS THE STARS</p>
+          <h2 class="display-title">亲爱的小楹，<br><em>见字如面。</em></h2>
+          <p class="section-description">有些话想写给你，很长很长。请给小安一点时间，慢慢讲给你听。</p>
+        </div>
+        <div id="envelopeScene" class="envelope-scene reveal">
+          <button id="openLetter" class="envelope-button" aria-expanded="false" aria-controls="letterPaper">
+            <span class="envelope-back"></span><span class="envelope-inside-paper"><b>My dearest 小楹</b><small>with all my love</small></span><span class="envelope-flap"></span><span class="envelope-front"></span><span class="envelope-seal">♡</span>
+          </button>
+          <p class="envelope-prompt" id="envelopePrompt">点击信封 · 打开小安写给你的长情书</p>
+        </div>
+        <article id="letterPaper" class="letter-paper" hidden>
+          <div class="paper-border" aria-hidden="true"></div>
+          <div class="letter-paper-intro"><span class="letter-overline">A PRIVATE LETTER · JUST FOR YOU</span><div class="letter-ornament">❦</div><h3>写给我最亲爱的小楹</h3><p>有些爱意，值得慢慢说。</p></div>
+
+          <section class="letter-part">
+            <h4>第一章　亲爱的小楹，见字如面</h4>
+            <p>亲爱的小楹：</p>
+            <p>当你读到这封信的时候，我不知道窗外是什么天气，也不知道你是不是快要结束了一天的忙碌。也许你正窝在一个舒服的角落，也许耳边刚好有一首轻柔的歌。但我希望，此刻的你能稍微停下来，给自己一点安静的时间，因为有一个叫小安的人，正把平时藏在心里的话，一字一句地写给你。</p>
+            <p>其实我想对你说的话真的很多。它们藏在每一次听到你的声音时，藏在看见你笑容的瞬间，也藏在那些明明没有什么重要事情、却依然想和你分享的普通日子里。我曾想过，如果把喜欢一个人的心情全部写出来，会不会显得太认真、太笨拙。可后来我觉得，喜欢你这件事，本来就值得我认真一点，再认真一点。</p>
+            <p>有些话面对面说，会害羞；有些话说到一半，会忘记；还有些话，直到夜深人静的时候，才知道它们原来一直住在心里。所以我想写一封很长的信，长到可以容纳我的心动、想念、感谢与期待。等你慢慢读完，也许就会明白，你在我心里拥有怎样特别的位置。</p>
+            <p>如果这封信有一个开始，那我想把它写成一句最简单的话。小楹，遇见你，真好。不是礼貌的客套，也不是为了营造浪漫的气氛，而是每当我认真回想与你有关的点滴，心里都会浮起的真实答案。</p>
+          </section>
+
+          <section class="letter-part">
+            <h4>第二章　你出现以后，世界温柔了许多</h4>
+            <p>以前我总觉得，日子不过是一天天往前走。工作有工作要忙，生活有生活要顾，开心的时候会笑，疲惫的时候也只能继续向前。直到你的身影慢慢走进我的生活，我才开始发现，原来有一个可以牵挂的人，会让平凡日子生出那么多细小而明亮的期待。</p>
+            <p>我喜欢那种在不经意间想起你的感觉。走在路上看到好看的云，便想知道你那边的天空是不是也这样；发现一点有趣的小事，就想留着，等聊天的时候告诉你；看到一处漂亮的风景，心里会忽然冒出一个念头，如果你也在这里，该有多好。你并没有要求我这样做，它们却自然地发生了。</p>
+            <p>喜欢一个人，或许不是让整个世界突然变得不同，而是在原本熟悉的世界里，多了一种温柔的看法。热闹不再只是热闹，因为我会想起你；安静也不再只是安静，因为有时候，思念会悄悄坐在我的身边。那些从前不太在意的小事，渐渐有了想与你分享的理由。</p>
+            <p>我尤其喜欢照片里的我们。演出现场灯光闪烁，人群坐在周围，我们拿着发光的应援棒，看向同一个镜头。那是一张很真实、很有生活气息的照片，没有精心安排的姿势，也没有必须完美的表情。可每次看到它，我都觉得开心，因为在那一帧里，你就在我的身边。比起镜头后面有多少光，我更在意镜头里面有你。</p>
+            <p>我想把这样的瞬间好好保存。不是因为它们有多惊天动地，而是因为我相信，很多年后真正让人怀念的，往往就是这种普通的幸福。我们曾在同一片灯光下笑过，也曾把短短的一刻留成一张照片。它们不需要解释，就足够让我觉得幸运。</p>
+          </section>
+
+          <section class="letter-part">
+            <h4>第三章　我喜欢的，是每一个真实的你</h4>
+            <p>小楹，我很喜欢看你的照片。喜欢你戴着帽子站在瀑布前，身后是奔涌的水，眼前是明亮的天地。风景当然很美，可我看到照片的第一眼，还是会不自觉地先去寻找你。那一瞬间，我忽然懂得了什么叫偏爱。一个人出现在画面里，其他景色便自然地退到了远处。</p>
+            <p>我也喜欢你穿着长裙的样子。柔和的灯光、优雅的裙摆、安静的眼神，让照片像一本精心装帧的故事书。但在我的心里，你的美从来不只存在于那样精致的瞬间。比起一张拍得好看的照片，我更珍惜那个会说话、会笑、会有小情绪，也会在生活里认真做事的你。</p>
+            <p>我喜欢你精神饱满的样子，也想照顾你偶尔疲惫的时刻。我希望你高兴的时候，可以尽情分享自己的喜悦；心情不好的时候，也不需要费力地装作什么都好。你可以有自己的想法、节奏和选择，可以喜欢自己的小世界，也可以偶尔把烦恼说给我听。我愿意先听你说完，再和你一起想办法。</p>
+            <p>爱情如果只是赞美漂亮的一面，那还远远不够。我想喜欢真实的你，理解那些别人不一定看得到的细节，也尊重你与我不同的地方。你不必为了让我满意而改变成什么样子。能够认识现在的你，已经是一件很值得感激的事情。</p>
+            <p>有时候我会想，世上有那么多人，每个人都有自己的故事和脚步。偏偏我们在这条漫长的路上相识，并逐渐成为彼此生活中重要的人。这份缘分并不是理所当然的。因此，我想好好对待它，也好好对待你。</p>
+          </section>
+
+          <section class="letter-part">
+            <h4>第四章　隔着屏幕的想念，也有温度</h4>
+            <p>你知道吗，我很珍惜那些视频通话的画面。屏幕里的你，有时戴着眼镜，有时把头发随意扎起来，有时笑得很开心，有时正认真说着什么。而屏幕另一边的我，也以最普通的模样出现在你的视线里。没有布景，没有刻意准备，却让我觉得那是一种十分亲近的陪伴。</p>
+            <p>我喜欢你隔着镜头看过来的样子。哪怕我们只是聊聊一天中的琐事，分享一点微不足道的见闻，时间也会悄悄过去。有时候我甚至不需要找到多精彩的话题，只要听见你在说话，看到你就在屏幕的那一端，心里就会安稳下来。原来一个人能够带来的安心，真的可以简单到这种程度。</p>
+            <p>当然，我也会想，如果这时候不是隔着屏幕，而是能够坐在你旁边，该有多好。这样你说到有趣的事情时，我就能第一时间看见你眼睛里发亮的样子；你累了的时候，我也能为你递上一杯水，告诉你今天已经很辛苦了。那些平凡的动作，忽然变成我很想实现的愿望。</p>
+            <p>可我并不觉得隔着屏幕的陪伴没有意义。相反，它让我慢慢学会，喜欢不只是见面时的热烈，也是看不见对方时的耐心与惦记。即使各自忙碌，也愿意给彼此一点时间；即使不能时时刻刻在一起，也会认真回应对方的心情。</p>
+            <p>我把那些截图看作一页页小小的日记。它们提醒我，我们不仅拥有被相机定格的旅行与笑容，也拥有很多安安静静的对话。它们或许不会成为别人口中的浪漫故事，却是我愿意反复翻看的珍贵记忆。</p>
+          </section>
+
+          <section class="letter-part">
+            <h4>第五章　那些没说出口的思念</h4>
+            <p>我以前不太明白，为什么一首普通的歌、一阵熟悉的风，甚至一个不经意的画面，都能够让人忽然想起另一个人。后来因为你，我渐渐明白了。思念并不是总要有一件特别的事作为理由。有时它像一颗小小的种子，安静地待在心里，又在某一个平凡的时刻，悄悄开出花来。</p>
+            <p>我会想知道你今天过得怎么样，有没有好好吃饭，有没有遇到让你高兴的事情。如果你忙，我希望你可以安心做自己的事；如果你累了，我希望你有一个舒服的夜晚。我当然想常常听见你的声音，但我更希望，你能拥有充实、自在、被认真照顾的生活。</p>
+            <p>有些想念其实很轻。比如看到一朵颜色好看的花，会想拍给你看；比如夜里抬头看见月亮，会想起你是不是也有空看看天空；比如经过一家有趣的小店，会想，等有机会，我们可以一起进去逛逛。喜欢渐渐落到这些细节里，就变成一种不需要刻意提醒的习惯。</p>
+            <p>我也承认，自己不可能每一次都把感受表达得恰到好处。有时话说得太少，有时想说的话又绕了太远。但请你相信，那些笨拙并不代表心意浅薄。恰恰是因为我在乎，才会希望自己的表达足够认真，希望你能够感受到我的真诚。</p>
+            <p>如果某一天你觉得委屈、失落，或者只是单纯地想找个人说说话，我希望你会想起我。不是因为我能解决所有问题，而是因为我愿意听，愿意学着理解，愿意在力所能及的地方陪着你。你的快乐值得分享，你的难过也值得被温柔接住。</p>
+          </section>
+
+          <section class="letter-part">
+            <h4>第六章　爱你，也尊重你自由生长的样子</h4>
+            <p>小楹，我想对你说，和你在一起，并不意味着要把彼此变成完全一样的人。我们可以有不同的爱好、不同的习惯，也可以对某些事情有各自的看法。比起要求你永远理解我，我更愿意先学着去理解你。比起每一次都争一个对错，我更在意我们能否好好说话，能否在不开心之后，依然愿意走近彼此。</p>
+            <p>我希望我们的感情里有很多笑声，也有足够的耐心。好的时候，彼此欣赏；难的时候，愿意一起面对。谁都会有不够成熟的时候，谁也不可能永远保持最好的状态。可是如果我们愿意认真对待对方的心情，愿意为做错的事情道歉，也愿意把期待好好说清楚，那么很多普通的日子，就会因为彼此而变得稳妥。</p>
+            <p>我喜欢你的独立，也欣赏你身上那些只属于你的闪光点。我希望你有勇气去做自己想做的事情，去看想看的世界，去成为自己喜欢的样子。而我很想在这个过程里，做一个愿意为你鼓掌的人。你走向新的风景时，我希望自己不是拖住你的重量，而是能让你多一点安心的陪伴。</p>
+            <p>爱并不是把所有温柔的话说一遍就够了。它还意味着，在日复一日里把尊重落实到行动中。记住对方在意的事情，认真对待已经答应过的小约定，忙碌的时候也愿意解释，不懂的时候愿意问。这些听上去一点也不轰轰烈烈，却是我想努力做到的事情。</p>
+            <p>我不知道未来是否每一天都晴朗，但我知道，我希望我们可以坦诚、轻松地站在彼此面前。你不用害怕自己的不完美，我也不必假装永远无所不能。我们可以一起成长，慢慢学会把爱表达得更好。</p>
+          </section>
+
+          <section class="letter-part">
+            <h4>第七章　关于未来，我有很多小小的愿望</h4>
+            <p>每次想到以后，我总会想象一些平凡得不能再平凡的场景。比如我们一起走在不赶时间的路上，看到喜欢的店便进去看看；比如周末找个有阳光的地方坐一会儿，你说你的新发现，我讲我的小故事；比如在忙碌的一天结束之后，能够互相问一句，今天过得好吗。</p>
+            <p>我还想和你看很多风景。可以是山川湖海，也可以只是住处附近的一条小路。看到好看的花就停下来，遇见特别的夕阳就一起拍张照片。我们不必把每一次出行都安排得完美无缺，有时迷路、有时改变计划，也许反而会变成以后想起来会笑的记忆。只要有你在身边，很多简单的事情都会显得有趣。</p>
+            <p>我想继续为你拍照，也想留下更多属于我们的合照。希望以后再翻开相册时，除了演出现场、瀑布旁的身影、精致的写真和视频通话的画面，还会多出许许多多新的章节。也许我们会在某一年看着照片，笑着想起当时的天气、说过的话，以及那些差点被忘记的小细节。</p>
+            <p>但我更期待的，并不只有值得拍照的瞬间。我也想珍惜那些没有镜头记录的普通时刻，比如一起挑选晚餐、为一件小事笑个不停、安安静静地各做各的事情。真正长久的喜欢，应该可以容纳这些平淡。它不需要每一天都像电影的高潮，却能在某一天回头时发现，我们已经并肩走过了很远。</p>
+            <p>关于未来，我不想轻易许下无法保证的宏大承诺。但我可以认真地说，我愿意用行动把每个当下过好，愿意把你当作一个值得尊重、值得珍惜的人，愿意和你商量，而不是替你决定。我希望未来的故事，由我们两个人一起慢慢写。</p>
+          </section>
+
+          <section class="letter-part">
+            <h4>第八章　小楹，我爱你</h4>
+            <p>写到这里，我忽然觉得，前面那么多字，其实都是在反复靠近一句最简单的话。小楹，我爱你。不是因为今天恰好有一封精心设计的情书，也不是因为星空、玫瑰与烟花让这句话听起来特别浪漫，而是因为当我想到你，我确实会想把自己最好的一份真诚留给你。</p>
+            <p>谢谢你出现在我的生活里。谢谢那些有你参与的日子，也谢谢你让我知道，原来心里装着一个人，可以是一件这么温暖的事情。我不希望自己的爱成为你的负担，只希望它像一盏小小的灯，在你需要的时候，能够安静地亮着。</p>
+            <p>如果你今天很开心，我想陪你一起开心；如果你今天有一点疲惫，我想告诉你，不必总是对自己那么严格。你可以慢一点，可以休息，可以偶尔把烦恼交给风。无论你是在盛装打扮的镜头前，还是在普通的生活里，你都是那个让我发自内心喜欢的小楹。</p>
+            <p>未来还有很多未知，也有很多值得期待的可能。我不知道每一页会写些什么，却很愿意带着耐心、诚意和一点点笨拙的浪漫，继续与你一起翻下去。我想把对你的喜欢放进日常，放进真正的关心，放进说到做到的小事里，让你不用只从一封信中感受到它。</p>
+            <p>所以，亲爱的小楹，请收下这封很长很长的信。它也许还有不够漂亮的句子，不够完美的表达，但每一个字都在努力说清同一件事。这个世界很大，夜空有数不清的星星，而我的目光，总会温柔地落向你。</p>
+            <p>愿你平安、自由、快乐。愿你所有真诚的愿望，都有机会一点点实现。也愿我们在未来回望今天时，依然记得此刻的心动，记得有一个人曾如此认真地说过，遇见你，是他很幸运的事情。</p>
+            <p>小楹，我爱你。今天如此，明天也愿如此。</p>
+          </section>
+
+          <div class="letter-signoff"><span>写不尽心意的小安</span><strong>小安 ♡ 小楹</strong><small>写在每一个想你的日子里</small></div>
+          <div class="letter-paper-actions"><button id="downloadLetter" class="button-outline">♡　把这封信珍藏起来</button><a class="button-quiet dark" href="#constellation">继续点亮我们的星空 ↓</a></div>
+        </article>
+      </div>
+      <div class="section-number">05 <span>/</span> 09</div>
+    </section>
+
+    <section class="chapter-section constellation-section" id="constellation" data-scene="night">
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-kicker">CHAPTER FIVE · OUR CONSTELLATION</p><h2 class="display-title">今晚的星星，<br><em>替我说五句悄悄话。</em></h2><p class="section-description">请依次点亮五颗星，每一颗都藏着小安的一句心意。</p></div>
+        <div class="constellation-layout reveal">
+          <div class="star-chart" id="starChart">
+            <div class="star-chart-ring" aria-hidden="true"></div>
+            <svg id="starLines" class="star-lines" aria-hidden="true" preserveAspectRatio="none"></svg>
+            <button class="star-point" style="--sx:19%;--sy:35%" data-star="0" aria-label="点亮遇见之星"><span>✦</span><small>遇见</small></button>
+            <button class="star-point" style="--sx:40%;--sy:14%" data-star="1" aria-label="点亮心动之星"><span>✦</span><small>心动</small></button>
+            <button class="star-point" style="--sx:75%;--sy:28%" data-star="2" aria-label="点亮想念之星"><span>✦</span><small>想念</small></button>
+            <button class="star-point" style="--sx:70%;--sy:72%" data-star="3" aria-label="点亮陪伴之星"><span>✦</span><small>陪伴</small></button>
+            <button class="star-point" style="--sx:29%;--sy:80%" data-star="4" aria-label="点亮未来之星"><span>✦</span><small>未来</small></button>
+            <div class="chart-center" aria-hidden="true">A <span>♥</span> Y</div>
+          </div>
+          <div class="star-story"><div class="star-counter">STAR NOTES <b id="starCount">0 / 5</b></div><h3 id="starNoteTitle">每一颗星，都在等你。</h3><p id="starNote">点亮第一颗星吧。小安写给小楹的悄悄话，就藏在这些光里。</p><div class="star-reveal" id="starReveal" hidden><div>✦　小安　♡　小楹　✦</div><p>星光可以走很远，而我的心意只想抵达你。</p></div></div>
+        </div>
+      </div>
+      <div class="section-number">06 <span>/</span> 09</div>
+    </section>
+
+    <section class="chapter-section gallery-section" id="gallery" data-scene="gallery">
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-kicker">CHAPTER SIX · LITTLE PIECES OF US</p><h2 class="display-title">把喜欢藏进照片，<br><em>把回忆留给时间。</em></h2><p class="section-description">九个真实的瞬间，都是小安想珍藏的画面。点击照片，可以慢慢看。</p></div>
+        <div class="gallery-intro-line"><span>OUR ALBUM</span><span>09 MOMENTS · ENDLESS LOVE</span></div>
+        <div class="photo-grid">
+          <button class="photo-card photo-card-wide reveal" data-photo="1" aria-label="放大演出现场横版合照"><img src="assets/photos/02-together-landscape.jpg" alt="小安和小楹坐在演出现场的合照" loading="lazy"><span class="photo-overlay"><b>01 · 同一片灯光下</b><small>有你在身边，热闹便有了意义。</small></span></button>
+          <button class="photo-card photo-card-portrait reveal" data-photo="0" aria-label="放大演出现场竖版合照"><img src="assets/photos/01-together-portrait.jpg" alt="小安和小楹拿着应援棒的竖版合照" loading="lazy"><span class="photo-overlay"><b>02 · 最幸运的同框</b><small>把这一刻，好好存起来。</small></span></button>
+          <button class="photo-card photo-card-tall reveal" data-photo="2" aria-label="放大小楹的瀑布照片"><img src="assets/photos/03-waterfall.jpg" alt="小楹戴着帽子站在瀑布前" loading="lazy"><span class="photo-overlay"><b>03 · 风景里有你</b><small>山川很美，而你更动人。</small></span></button>
+          <button class="photo-card reveal" data-photo="3" aria-label="放大小楹的礼服写真"><img src="assets/photos/04-portrait-dress.jpg" alt="小楹身穿浅色礼服的精致写真" loading="lazy"><span class="photo-overlay"><b>04 · 我的玫瑰女孩</b><small>你有自己的光。</small></span></button>
+          <button class="photo-card reveal" data-photo="4" aria-label="放大小楹礼服特写"><img src="assets/photos/05-portrait-feather.jpg" alt="小楹手拿羽毛的礼服特写" loading="lazy"><span class="photo-overlay"><b>05 · 温柔的侧影</b><small>喜欢每一个真实的你。</small></span></button>
+        </div>
+        <div class="calls-heading reveal"><span class="call-line"></span><h3>隔着屏幕，也想看见你</h3><span class="call-line"></span><p>那些普通的视频通话，也是我们的小小纪念。</p></div>
+        <div class="calls-grid">
+          <button class="call-card reveal" data-photo="5" aria-label="放大视频通话照片一"><img src="assets/photos/06-call-01.jpg" alt="小楹和小安的视频通话截图之一" loading="lazy"><span>01 / Hello</span></button>
+          <button class="call-card reveal" data-photo="6" aria-label="放大视频通话照片二"><img src="assets/photos/07-call-02.jpg" alt="小楹和小安的视频通话截图之二" loading="lazy"><span>02 / I'm here</span></button>
+          <button class="call-card reveal" data-photo="7" aria-label="放大视频通话照片三"><img src="assets/photos/08-call-03.jpg" alt="小楹和小安的视频通话截图之三" loading="lazy"><span>03 / Your smile</span></button>
+          <button class="call-card reveal" data-photo="8" aria-label="放大视频通话照片四"><img src="assets/photos/09-call-04.jpg" alt="小楹和小安的视频通话截图之四" loading="lazy"><span>04 / Always</span></button>
+        </div>
+      </div>
+      <div class="section-number">07 <span>/</span> 09</div>
+    </section>
+
+    <section class="chapter-section future-section" id="future" data-scene="dawn">
+      <div class="dawn-sun" aria-hidden="true"></div><div class="dawn-hills dawn-hills-back" aria-hidden="true"></div><div class="dawn-hills dawn-hills-front" aria-hidden="true"></div>
+      <div class="container future-content">
+        <div class="section-heading reveal"><p class="section-kicker">CHAPTER SEVEN · ALL THE TOMORROWS</p><h2 class="display-title">往后的日子，<br><em>想和你慢慢走。</em></h2><p class="section-description">不急着抵达哪里，只是想在未来的很多普通时刻，依然有你。</p></div>
+        <div class="future-grid">
+          <div class="future-card reveal"><span class="future-card-num">01</span><div class="future-icon">☀</div><h3>一起去看风景</h3><p>看山、看海、看落日。也看看那些不经意经过的小街道。</p></div>
+          <div class="future-card reveal"><span class="future-card-num">02</span><div class="future-icon">☕</div><h3>一起度过平常</h3><p>吃喜欢的东西，聊普通的事情，把每一天都过得有滋味。</p></div>
+          <div class="future-card reveal"><span class="future-card-num">03</span><div class="future-icon">✦</div><h3>一起认真成长</h3><p>支持彼此的选择，也学习怎样更加温柔地理解对方。</p></div>
+          <div class="future-card reveal"><span class="future-card-num">04</span><div class="future-icon">∞</div><h3>一起留下故事</h3><p>希望未来翻开相册，又多了很多张让我们微笑的照片。</p></div>
+        </div>
+        <div class="future-quote reveal">“比起某个完美的远方，<br>我更期待有你参与的、真实的每一天。”</div>
+      </div>
+      <div class="section-number">08 <span>/</span> 09</div>
+    </section>
+
+    <section class="chapter-section finale-section" id="finale" data-scene="finale">
+      <div class="finale-aurora" aria-hidden="true"></div>
+      <div class="container finale-layout">
+        <div class="finale-image-wrap reveal"><figure class="finale-image"><img src="assets/photos/01-together-portrait.jpg" alt="小安与小楹在演出现场的合照" loading="lazy"><figcaption>OUR STORY · TO BE CONTINUED</figcaption></figure><span class="finale-image-star star-a">✦</span><span class="finale-image-star star-b">✧</span></div>
+        <div class="finale-copy reveal"><p class="section-kicker">THE FINAL CHAPTER · MY DEAREST</p><div class="finale-mini-heart">♡</div><h2>小楹，<br><em>我爱你。</em></h2><p class="finale-words">不是因为今天有多特别，<br>而是因为有你的每一天，<br>对我来说都值得认真珍惜。</p><p class="finale-words small">人间有四季，岁月有晨昏。<br>而我对你的喜欢，想从今天写到很久很久以后。</p><button id="fireworksButton" class="button-primary finale-button"><span>♡　收下小安的爱</span><span aria-hidden="true">✧</span></button><p id="finaleAfter" class="finale-after" aria-live="polite"></p></div>
+      </div>
+      <div class="finale-footer"><span>MADE WITH ALL MY HEART</span><button id="secretHeart" class="secret-heart" aria-label="打开隐藏的小惊喜">♥</button><span>FOR XIAO YING · BY XIAO AN</span></div>
+      <div class="secret-note" id="secretNote" role="status" aria-live="polite" hidden>偷偷告诉小楹：你不需要成为谁眼中的完美。你做自己，就已经足够让我心动。 ♡</div>
+      <div class="section-number">09 <span>/</span> 09</div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>小安 ♡ 小楹</span><span>愿每一次翻开，都能重新感受到这份喜欢。</span><a href="#home" aria-label="返回首页">回到星河 ↑</a></footer>
+
+  <dialog id="photoLightbox" class="photo-lightbox" aria-label="查看回忆照片"><div class="lightbox-content"><button class="lightbox-close" id="lightboxClose" aria-label="关闭照片">×</button><button class="lightbox-arrow prev" id="lightboxPrev" aria-label="上一张照片">‹</button><img id="lightboxImage" src="assets/photos/02-together-landscape.jpg" alt=""><button class="lightbox-arrow next" id="lightboxNext" aria-label="下一张照片">›</button><p id="lightboxCaption"></p><small id="lightboxIndex"></small></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
